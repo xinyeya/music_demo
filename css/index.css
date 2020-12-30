@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #000000;
+}
+.box {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 420px;
+  height: 120px;
+}
+.box .player {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+}
+.box .player .cover {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  top: -40px;
+  left: 30px;
+  overflow: hidden;
+  background-image: url("https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=274318705,838677184&fm=26&gp=0.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box .player .cover .cover-round {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.box .player .controls {
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding-right: 20px;
+}
+.box .player .controls svg {
+  width: 50px;
+  height: 50px;
+  fill: #8a8a8a;
+}
+.box .player .controls svg:hover {
+  fill: #000000;
+}
+.box .player .cover-active {
+  width: 125px;
+  height: 125px;
+  top: -50px;
+  -webkit-animation: animal 4s infinite linear ;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+@-webkit-keyframes animal {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.box .player .play_info {
+  position: absolute;
+  width: 400px;
+  height: 90px;
+  background-color: #D4E9F8;
+  border-radius: 10px;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+.box .player .play_info p {
+  padding-left: 40%;
+  margin-top: 10px;
+}
+.box .player .play_info p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.box .player .play_info p:last-child {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+.box .player audio {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
